@@ -20,6 +20,7 @@
 Кнопка на одной из сторон карточки активируется если навести на неё курсор мыши. Это так же реализовано с помощью "button:hover".
 
 Анимания движущихся линий выполнена с помощью методов "button__line--", в котором указываются параметры и цвет анимации, и "button:hover .button__line--", где указывается время действия и размер анимации.
+
 ![image](https://github.com/LxstHokage/Flip-card-JS/assets/109164076/53081c3a-a4b2-44ce-bb02-e524219e5c73)
 ![image](https://github.com/LxstHokage/Flip-card-JS/assets/109164076/8cf189d8-66e4-46b0-b5dd-862fb788efd0)
 
