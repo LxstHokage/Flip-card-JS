@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Consolas", sans-serif;
+}
+.button{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #a301ccd7;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+.button__line{
+    position: absolute;
+    display: block;
+}
+.button__line--top{
+top: 0;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg,transparent,#8c0f91);
+}
+.button:hover .button__line--top{
+    left: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition-delay: 0.25s;
+}
+.button__line--bottom{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#8c0f91);
+    }
+.button:hover .button__line--bottom{
+        right: 100%;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition-delay: 0.25s;
+}
+.button__line--left{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg,transparent,#8c0f91);
+    }
+.button:hover .button__line--left{
+        bottom: 100%;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition-delay: 0s;    
+}
+.button__line--right{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#b003b6f3);
+    }
+.button:hover .button__line--right{
+        top: 100%;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition-delay: 0s;
+}
+.button:hover{
+    box-shadow: 0 0 10px #8c0f91, 0 0 40px #8c0f91,  0 0 80px #8c0f91;
+    background-color: #8c0f91;
+    color: #333;
+    transition-delay: 1s;
+}
+
+.wrap{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #bdbdbd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    perspective: 1000px;
+}
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.back{
+    background-image: url("https://sun9-2.userapi.com/impg/l8ZvXBKslaur9x9J79tvMrXDi3pfbnY95_Jzrg/wyAa9O6Yiho.jpg?size=1280x898&quality=95&sign=fc036c9c51b4eb8c79739898bd3b8bbc&type=album");
+    background-size: 100% 100%;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+.front{
+    background-image: url("https://sun9-6.userapi.com/impg/Wa9bmZvbbxVw3wEbmhJwbcVuQ7SkpMc5HYGDaw/1P_bz9qVaRs.jpg?size=1280x855&quality=95&sign=7b420f0f2800c3aac666d66c46f1c696&type=album");
+    background-size: 100% 100%;
+}
+.card:hover .front{ transform: rotateY(180deg); -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -ms-transform: rotateY(180deg); -o-transform: rotateY(180deg);
+}
+.card:hover .back{ transform: rotateY(360deg); -webkit-transform: rotateY(360deg); -moz-transform: rotateY(360deg); -ms-transform: rotateY(360deg); -o-transform: rotateY(360deg);
+}
