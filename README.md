@@ -24,6 +24,10 @@
 ![image](https://github.com/LxstHokage/Flip-card-JS/assets/109164076/53081c3a-a4b2-44ce-bb02-e524219e5c73)
 ![image](https://github.com/LxstHokage/Flip-card-JS/assets/109164076/8cf189d8-66e4-46b0-b5dd-862fb788efd0)
 
+Ссылки на файлы с содержанием карточки находятся в репозитории.
+
+Удачи!
+
 Контакты автора:
 
 [VK](https://vk.com/lxsthokage)
